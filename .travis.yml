@@ -1,0 +1,18 @@
+language: swift
+osx_image: xcode8.3
+
+# cache:
+#   - cocoapods
+#   - slather
+
+
+env:
+   global:
+   - LANG=en_US.UTF-8
+
+   - MACOS_SCHEME="Mayon"
+   - MACOS_SDK=macosx10.9
+
+   
+script:
+  swift build

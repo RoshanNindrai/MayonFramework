@@ -70,15 +70,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_34"
-            BuildableName = "Spectre.framework"
-            BlueprintName = "Spectre"
+            BlueprintIdentifier = "OBJ_65"
+            BuildableName = "Mayon"
+            BlueprintName = "Mayon"
             ReferencedContainer = "container:Mayon.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
