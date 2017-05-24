@@ -1,12 +1,9 @@
-
-.DS_Store
-/.build
-/Packages
-/*.xcodeproj
-
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+.DS_Store
+/.build
 
 ## Build generated
 build/
@@ -41,8 +38,8 @@ playground.xcworkspace
 # Swift Package Manager
 #
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
+Packages/
+Package.pins
 .build/
 
 # CocoaPods
@@ -71,4 +68,4 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
->>>>>>> 8b4e214a4906cd0357a5ad1b1be17c2d98c09087
+
