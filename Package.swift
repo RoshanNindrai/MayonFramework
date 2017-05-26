@@ -4,7 +4,14 @@ import PackageDescription
 
 let package = Package(
     name: "Mayon",
+    targets: [
+        Target(name: "MayonFramework"),
+        Target(name: "mayon",
+               dependencies: [
+                .Target(name: "MayonFramework")
+               ])
+    ],
     dependencies: [
-        .Package(url: "https://github.com/kylef/Commander.git", majorVersion: 0, minor: 6)
+        .Package(url: "https://github.com/jakeheis/SwiftCLI", majorVersion: 3, minor: 0)
     ]
 )

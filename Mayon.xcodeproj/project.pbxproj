@@ -7,154 +7,172 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_39 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Case.swift */; };
-		OBJ_40 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Context.swift */; };
-		OBJ_41 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Expectation.swift */; };
-		OBJ_42 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Failure.swift */; };
-		OBJ_43 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Global.swift */; };
-		OBJ_44 /* GlobalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* GlobalContext.swift */; };
-		OBJ_45 /* Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Reporter.swift */; };
-		OBJ_46 /* Reporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Reporters.swift */; };
-		OBJ_53 /* ArgumentConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ArgumentConvertible.swift */; };
-		OBJ_54 /* ArgumentDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ArgumentDescription.swift */; };
-		OBJ_55 /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* ArgumentParser.swift */; };
-		OBJ_56 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Command.swift */; };
-		OBJ_57 /* CommandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* CommandRunner.swift */; };
-		OBJ_58 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Commands.swift */; };
-		OBJ_59 /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* CommandType.swift */; };
-		OBJ_60 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Error.swift */; };
-		OBJ_61 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Group.swift */; };
-		OBJ_63 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Spectre.framework */; };
-		OBJ_70 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* main.swift */; };
-		OBJ_72 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Spectre.framework */; };
-		OBJ_73 /* Commander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Commander.framework */; };
+		AB9777C21ED7A10E00222EAC /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* MayonFramework.framework */; };
+		OBJ_100 /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* MayonFramework.framework */; };
+		OBJ_77 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Version.swift */; };
+		OBJ_86 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
+		OBJ_87 /* Commander.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Commander.swift */; };
+		OBJ_88 /* Discovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Discovery.swift */; };
+		OBJ_97 /* MayonFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MayonFrameworkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AB0F36731ED6410C004E9ADA /* PBXContainerItemProxy */ = {
+		AB9777C01ED79F9200222EAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_34;
-			remoteInfo = Spectre;
-		};
-		AB0F36741ED6410C004E9ADA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_34;
-			remoteInfo = Spectre;
-		};
-		AB0F36751ED6410C004E9ADA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_48;
-			remoteInfo = Commander;
+			remoteGlobalIDString = OBJ_72;
+			remoteInfo = MayonFramework;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		OBJ_12 /* ArgumentConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentConvertible.swift; sourceTree = "<group>"; };
-		OBJ_13 /* ArgumentDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDescription.swift; sourceTree = "<group>"; };
-		OBJ_14 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
-		OBJ_15 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		OBJ_16 /* CommandRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandRunner.swift; sourceTree = "<group>"; };
-		OBJ_17 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
-		OBJ_18 /* CommandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandType.swift; sourceTree = "<group>"; };
-		OBJ_19 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		OBJ_20 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
-		OBJ_22 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
-		OBJ_23 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
-		OBJ_24 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
-		OBJ_25 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
-		OBJ_26 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		OBJ_27 /* GlobalContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalContext.swift; sourceTree = "<group>"; };
-		OBJ_28 /* Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
-		OBJ_29 /* Reporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporters.swift; sourceTree = "<group>"; };
-		OBJ_31 /* Spectre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Spectre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_32 /* Commander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_33 /* Mayon */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mayon; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9777C41ED7B49C00222EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_10 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		OBJ_12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Commander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commander.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Discovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovery.swift; sourceTree = "<group>"; };
+		OBJ_18 /* MayonFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayonFrameworkTests.swift; sourceTree = "<group>"; };
+		OBJ_21 /* ArgumentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentList.swift; sourceTree = "<group>"; };
+		OBJ_22 /* ArgumentListManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentListManipulator.swift; sourceTree = "<group>"; };
+		OBJ_23 /* ChainableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainableCommand.swift; sourceTree = "<group>"; };
+		OBJ_24 /* CLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLI.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		OBJ_26 /* CommandMessageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandMessageGenerator.swift; sourceTree = "<group>"; };
+		OBJ_27 /* CommandSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandSignature.swift; sourceTree = "<group>"; };
+		OBJ_28 /* GlobalOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalOptions.swift; sourceTree = "<group>"; };
+		OBJ_29 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		OBJ_31 /* LightweightCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightCommand.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		OBJ_33 /* OptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionGroup.swift; sourceTree = "<group>"; };
+		OBJ_34 /* OptionRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRecognizer.swift; sourceTree = "<group>"; };
+		OBJ_35 /* OptionRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRegistry.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		OBJ_38 /* ParameterFiller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterFiller.swift; sourceTree = "<group>"; };
+		OBJ_39 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		OBJ_40 /* VersionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCommand.swift; sourceTree = "<group>"; };
+		OBJ_43 /* MayonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MayonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_44 /* mayon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mayon; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_45 /* MayonFrameworkTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MayonFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_47 /* Frameworks */ = {
+		OBJ_78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_62 /* Frameworks */ = {
+		OBJ_89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_63 /* Spectre.framework in Frameworks */,
+				AB9777C21ED7A10E00222EAC /* MayonFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_71 /* Frameworks */ = {
+		OBJ_98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_72 /* Spectre.framework in Frameworks */,
-				OBJ_73 /* Commander.framework in Frameworks */,
+				OBJ_100 /* MayonFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Dependencies */ = {
+		AB9777C31ED7B49C00222EAC /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* Commander 0.6.1 */,
-				OBJ_21 /* Spectre 0.7.2 */,
+				AB9777C41ED7B49C00222EAC /* Info.plist */,
+			);
+			name = "Supporting files";
+			path = "Sources/mayon/Supporting files";
+			sourceTree = "<group>";
+		};
+		OBJ_11 /* mayon */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* main.swift */,
+				OBJ_13 /* Commands */,
+			);
+			name = mayon;
+			path = Sources/mayon;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_13 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* Commander.swift */,
+				OBJ_15 /* Discovery.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		OBJ_16 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* MayonFrameworkTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* MayonFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* MayonFrameworkTests.swift */,
+			);
+			name = MayonFrameworkTests;
+			path = Tests/MayonFrameworkTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* SwiftCLI 3.0.1 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_11 /* Commander 0.6.1 */ = {
+		OBJ_20 /* SwiftCLI 3.0.1 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* ArgumentConvertible.swift */,
-				OBJ_13 /* ArgumentDescription.swift */,
-				OBJ_14 /* ArgumentParser.swift */,
-				OBJ_15 /* Command.swift */,
-				OBJ_16 /* CommandRunner.swift */,
-				OBJ_17 /* Commands.swift */,
-				OBJ_18 /* CommandType.swift */,
-				OBJ_19 /* Error.swift */,
-				OBJ_20 /* Group.swift */,
+				OBJ_21 /* ArgumentList.swift */,
+				OBJ_22 /* ArgumentListManipulator.swift */,
+				OBJ_23 /* ChainableCommand.swift */,
+				OBJ_24 /* CLI.swift */,
+				OBJ_25 /* Command.swift */,
+				OBJ_26 /* CommandMessageGenerator.swift */,
+				OBJ_27 /* CommandSignature.swift */,
+				OBJ_28 /* GlobalOptions.swift */,
+				OBJ_29 /* HelpCommand.swift */,
+				OBJ_30 /* Input.swift */,
+				OBJ_31 /* LightweightCommand.swift */,
+				OBJ_32 /* Option.swift */,
+				OBJ_33 /* OptionGroup.swift */,
+				OBJ_34 /* OptionRecognizer.swift */,
+				OBJ_35 /* OptionRegistry.swift */,
+				OBJ_36 /* Output.swift */,
+				OBJ_37 /* Parameter.swift */,
+				OBJ_38 /* ParameterFiller.swift */,
+				OBJ_39 /* Router.swift */,
+				OBJ_40 /* VersionCommand.swift */,
 			);
-			name = "Commander 0.6.1";
-			path = ".build/checkouts/Commander.git-8842944228949165507/Sources";
+			name = "SwiftCLI 3.0.1";
+			path = ".build/checkouts/SwiftCLI-8466703425035036135/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_21 /* Spectre 0.7.2 */ = {
+		OBJ_41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* Case.swift */,
-				OBJ_23 /* Context.swift */,
-				OBJ_24 /* Expectation.swift */,
-				OBJ_25 /* Failure.swift */,
-				OBJ_26 /* Global.swift */,
-				OBJ_27 /* GlobalContext.swift */,
-				OBJ_28 /* Reporter.swift */,
-				OBJ_29 /* Reporters.swift */,
-			);
-			name = "Spectre 0.7.2";
-			path = ".build/checkouts/Spectre.git--7655155069707042687/Sources";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_30 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_31 /* Spectre.framework */,
-				OBJ_32 /* Commander.framework */,
-				OBJ_33 /* Mayon */,
+				OBJ_43 /* MayonFramework.framework */,
+				OBJ_44 /* mayon */,
+				OBJ_45 /* MayonFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -164,9 +182,9 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_9 /* Tests */,
-				OBJ_10 /* Dependencies */,
-				OBJ_30 /* Products */,
+				OBJ_16 /* Tests */,
+				OBJ_19 /* Dependencies */,
+				OBJ_41 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -174,72 +192,83 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* main.swift */,
+				OBJ_8 /* MayonFramework */,
+				OBJ_11 /* mayon */,
+				AB9777C31ED7B49C00222EAC /* Supporting files */,
 			);
-			path = Sources;
+			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_9 /* Tests */ = {
+		OBJ_8 /* MayonFramework */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_9 /* Helper */,
 			);
-			name = Tests;
+			name = MayonFramework;
+			path = Sources/MayonFramework;
 			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Version.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_34 /* Spectre */ = {
+		OBJ_72 /* MayonFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_35 /* Build configuration list for PBXNativeTarget "Spectre" */;
+			buildConfigurationList = OBJ_73 /* Build configuration list for PBXNativeTarget "MayonFramework" */;
 			buildPhases = (
-				OBJ_38 /* Sources */,
-				OBJ_47 /* Frameworks */,
-				AB0F36761ED64159004E9ADA /* SwiftLint */,
+				OBJ_76 /* Sources */,
+				OBJ_78 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Spectre;
-			productName = Spectre;
-			productReference = OBJ_31 /* Spectre.framework */;
+			name = MayonFramework;
+			productName = MayonFramework;
+			productReference = OBJ_43 /* MayonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_48 /* Commander */ = {
+		OBJ_81 /* mayon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_49 /* Build configuration list for PBXNativeTarget "Commander" */;
+			buildConfigurationList = OBJ_82 /* Build configuration list for PBXNativeTarget "mayon" */;
 			buildPhases = (
-				OBJ_52 /* Sources */,
-				OBJ_62 /* Frameworks */,
+				OBJ_85 /* Sources */,
+				OBJ_89 /* Frameworks */,
+				AB9777C51ED7B4DC00222EAC /* Swift Build */,
+				AB9777C61ED7B4ED00222EAC /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_64 /* PBXTargetDependency */,
 			);
-			name = Commander;
-			productName = Commander;
-			productReference = OBJ_32 /* Commander.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		OBJ_65 /* Mayon */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_66 /* Build configuration list for PBXNativeTarget "Mayon" */;
-			buildPhases = (
-				OBJ_69 /* Sources */,
-				OBJ_71 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_74 /* PBXTargetDependency */,
-				OBJ_75 /* PBXTargetDependency */,
-			);
-			name = Mayon;
-			productName = Mayon;
-			productReference = OBJ_33 /* Mayon */;
+			name = mayon;
+			productName = mayon;
+			productReference = OBJ_44 /* mayon */;
 			productType = "com.apple.product-type.tool";
+		};
+		OBJ_92 /* MayonFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_93 /* Build configuration list for PBXNativeTarget "MayonFrameworkTests" */;
+			buildPhases = (
+				OBJ_96 /* Sources */,
+				OBJ_98 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_102 /* PBXTargetDependency */,
+			);
+			name = MayonFrameworkTests;
+			productName = MayonFrameworkTests;
+			productReference = OBJ_45 /* MayonFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -257,26 +286,40 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_30 /* Products */;
+			productRefGroup = OBJ_41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_34 /* Spectre */,
-				OBJ_48 /* Commander */,
-				OBJ_65 /* Mayon */,
+				OBJ_81 /* mayon */,
+				OBJ_72 /* MayonFramework */,
+				OBJ_92 /* MayonFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AB0F36761ED64159004E9ADA /* SwiftLint */ = {
+		AB9777C51ED7B4DC00222EAC /* Swift Build */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = SwiftLint;
+			name = "Swift Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swift build";
+		};
+		AB9777C61ED7B4ED00222EAC /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,62 +329,39 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_38 /* Sources */ = {
+		OBJ_76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_39 /* Case.swift in Sources */,
-				OBJ_40 /* Context.swift in Sources */,
-				OBJ_41 /* Expectation.swift in Sources */,
-				OBJ_42 /* Failure.swift in Sources */,
-				OBJ_43 /* Global.swift in Sources */,
-				OBJ_44 /* GlobalContext.swift in Sources */,
-				OBJ_45 /* Reporter.swift in Sources */,
-				OBJ_46 /* Reporters.swift in Sources */,
+				OBJ_77 /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_52 /* Sources */ = {
+		OBJ_85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_53 /* ArgumentConvertible.swift in Sources */,
-				OBJ_54 /* ArgumentDescription.swift in Sources */,
-				OBJ_55 /* ArgumentParser.swift in Sources */,
-				OBJ_56 /* Command.swift in Sources */,
-				OBJ_57 /* CommandRunner.swift in Sources */,
-				OBJ_58 /* Commands.swift in Sources */,
-				OBJ_59 /* CommandType.swift in Sources */,
-				OBJ_60 /* Error.swift in Sources */,
-				OBJ_61 /* Group.swift in Sources */,
+				OBJ_86 /* main.swift in Sources */,
+				OBJ_87 /* Commander.swift in Sources */,
+				OBJ_88 /* Discovery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_69 /* Sources */ = {
+		OBJ_96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_70 /* main.swift in Sources */,
+				OBJ_97 /* MayonFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_64 /* PBXTargetDependency */ = {
+		OBJ_102 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_34 /* Spectre */;
-			targetProxy = AB0F36731ED6410C004E9ADA /* PBXContainerItemProxy */;
-		};
-		OBJ_74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_34 /* Spectre */;
-			targetProxy = AB0F36741ED6410C004E9ADA /* PBXContainerItemProxy */;
-		};
-		OBJ_75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_48 /* Commander */;
-			targetProxy = AB0F36751ED6410C004E9ADA /* PBXContainerItemProxy */;
+			target = OBJ_72 /* MayonFramework */;
+			targetProxy = AB9777C01ED79F9200222EAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -356,60 +376,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
-		};
-		OBJ_36 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Mayon.xcodeproj/Spectre_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Spectre;
-			};
-			name = Debug;
-		};
-		OBJ_37 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Mayon.xcodeproj/Spectre_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Spectre;
-			};
-			name = Release;
 		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -420,11 +398,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_OPTIMIZATION_LEVEL = s;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
@@ -432,7 +410,7 @@
 			};
 			name = Release;
 		};
-		OBJ_50 /* Debug */ = {
+		OBJ_74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -441,19 +419,19 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Mayon.xcodeproj/Commander_Info.plist;
+				INFOPLIST_FILE = Mayon.xcodeproj/MayonFramework_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Commander;
+				PRODUCT_BUNDLE_IDENTIFIER = MayonFramework;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGET_NAME = Commander;
+				TARGET_NAME = MayonFramework;
 			};
 			name = Debug;
 		};
-		OBJ_51 /* Release */ = {
+		OBJ_75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -462,19 +440,19 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Mayon.xcodeproj/Commander_Info.plist;
+				INFOPLIST_FILE = Mayon.xcodeproj/MayonFramework_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Commander;
+				PRODUCT_BUNDLE_IDENTIFIER = MayonFramework;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGET_NAME = Commander;
+				TARGET_NAME = MayonFramework;
 			};
 			name = Release;
 		};
-		OBJ_67 /* Debug */ = {
+		OBJ_83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -482,17 +460,24 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Mayon.xcodeproj/Mayon_Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/mayon/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"$(INFOPLIST_FILE)",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uniqlabs.mayon;
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				TARGET_NAME = Mayon;
+				TARGET_NAME = mayon;
 			};
 			name = Debug;
 		};
-		OBJ_68 /* Release */ = {
+		OBJ_84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -500,13 +485,54 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Mayon.xcodeproj/Mayon_Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/mayon/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"$(INFOPLIST_FILE)",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uniqlabs.mayon;
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				TARGET_NAME = Mayon;
+				TARGET_NAME = mayon;
+			};
+			name = Release;
+		};
+		OBJ_94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Mayon.xcodeproj/MayonFrameworkTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = MayonFrameworkTests;
+			};
+			name = Debug;
+		};
+		OBJ_95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Mayon.xcodeproj/MayonFrameworkTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = MayonFrameworkTests;
 			};
 			name = Release;
 		};
@@ -522,29 +548,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_35 /* Build configuration list for PBXNativeTarget "Spectre" */ = {
+		OBJ_73 /* Build configuration list for PBXNativeTarget "MayonFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_36 /* Debug */,
-				OBJ_37 /* Release */,
+				OBJ_74 /* Debug */,
+				OBJ_75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_49 /* Build configuration list for PBXNativeTarget "Commander" */ = {
+		OBJ_82 /* Build configuration list for PBXNativeTarget "mayon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_50 /* Debug */,
-				OBJ_51 /* Release */,
+				OBJ_83 /* Debug */,
+				OBJ_84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_66 /* Build configuration list for PBXNativeTarget "Mayon" */ = {
+		OBJ_93 /* Build configuration list for PBXNativeTarget "MayonFrameworkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_67 /* Debug */,
-				OBJ_68 /* Release */,
+				OBJ_94 /* Debug */,
+				OBJ_95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
