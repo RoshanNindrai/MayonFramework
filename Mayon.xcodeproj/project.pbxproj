@@ -7,31 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1D26FE1ED8D41F007C46C2 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D26FD1ED8D41F007C46C2 /* Discover.swift */; };
+		AB1D27031ED8D4B5007C46C2 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D27021ED8D4B5007C46C2 /* Platform.swift */; };
+		AB1D27091ED8E191007C46C2 /* CommandBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D27071ED8E084007C46C2 /* CommandBus.swift */; };
+		AB1D270B1ED8E1A8007C46C2 /* Discovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D27051ED8D849007C46C2 /* Discovery.swift */; };
+		AB1D270F1ED8E26F007C46C2 /* DiscoveryOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D270E1ED8E26F007C46C2 /* DiscoveryOption.swift */; };
+		AB1D27141ED8F1EB007C46C2 /* IOSFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D27131ED8F1EB007C46C2 /* IOSFinder.swift */; };
+		AB1D27161ED8F201007C46C2 /* AndroidFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D27151ED8F201007C46C2 /* AndroidFinder.swift */; };
+		AB1D27191ED8F315007C46C2 /* FinderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D27181ED8F315007C46C2 /* FinderProtocol.swift */; };
+		AB1D271B1ED8F33F007C46C2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D271A1ED8F33F007C46C2 /* Device.swift */; };
+		AB1D271D1ED8F516007C46C2 /* Finder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D271C1ED8F516007C46C2 /* Finder.swift */; };
 		AB9777C21ED7A10E00222EAC /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* MayonFramework.framework */; };
-		OBJ_100 /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* MayonFramework.framework */; };
 		OBJ_77 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Version.swift */; };
 		OBJ_86 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
 		OBJ_87 /* Commander.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Commander.swift */; };
-		OBJ_88 /* Discovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Discovery.swift */; };
-		OBJ_97 /* MayonFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MayonFrameworkTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AB9777C01ED79F9200222EAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_72;
-			remoteInfo = MayonFramework;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		AB1D26FD1ED8D41F007C46C2 /* Discover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		AB1D27021ED8D4B5007C46C2 /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		AB1D27051ED8D849007C46C2 /* Discovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discovery.swift; sourceTree = "<group>"; };
+		AB1D27071ED8E084007C46C2 /* CommandBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandBus.swift; sourceTree = "<group>"; };
+		AB1D270E1ED8E26F007C46C2 /* DiscoveryOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryOption.swift; sourceTree = "<group>"; };
+		AB1D27131ED8F1EB007C46C2 /* IOSFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSFinder.swift; sourceTree = "<group>"; };
+		AB1D27151ED8F201007C46C2 /* AndroidFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndroidFinder.swift; sourceTree = "<group>"; };
+		AB1D27181ED8F315007C46C2 /* FinderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderProtocol.swift; sourceTree = "<group>"; };
+		AB1D271A1ED8F33F007C46C2 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		AB1D271C1ED8F516007C46C2 /* Finder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finder.swift; sourceTree = "<group>"; };
 		AB9777C41ED7B49C00222EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		OBJ_10 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		OBJ_12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Commander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commander.swift; sourceTree = "<group>"; };
-		OBJ_15 /* Discovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovery.swift; sourceTree = "<group>"; };
 		OBJ_18 /* MayonFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayonFrameworkTests.swift; sourceTree = "<group>"; };
 		OBJ_21 /* ArgumentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentList.swift; sourceTree = "<group>"; };
 		OBJ_22 /* ArgumentListManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentListManipulator.swift; sourceTree = "<group>"; };
@@ -55,7 +61,6 @@
 		OBJ_40 /* VersionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCommand.swift; sourceTree = "<group>"; };
 		OBJ_43 /* MayonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MayonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_44 /* mayon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mayon; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_45 /* MayonFrameworkTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MayonFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,17 +80,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_98 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_100 /* MayonFramework.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB1D26FC1ED8D41F007C46C2 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D26FD1ED8D41F007C46C2 /* Discover.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		AB1D27011ED8D4AF007C46C2 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D27111ED8F1D0007C46C2 /* Apple */,
+				AB1D27121ED8F1D0007C46C2 /* Android */,
+				AB1D27021ED8D4B5007C46C2 /* Platform.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		AB1D27041ED8D83A007C46C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D270D1ED8E255007C46C2 /* Options */,
+				AB1D27051ED8D849007C46C2 /* Discovery.swift */,
+				AB1D27071ED8E084007C46C2 /* CommandBus.swift */,
+				AB1D271A1ED8F33F007C46C2 /* Device.swift */,
+				AB1D271C1ED8F516007C46C2 /* Finder.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AB1D270D1ED8E255007C46C2 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D270E1ED8E26F007C46C2 /* DiscoveryOption.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		AB1D27101ED8F030007C46C2 /* Mayon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mayon;
+			path = Tests/Mayon;
+			sourceTree = "<group>";
+		};
+		AB1D27111ED8F1D0007C46C2 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D27131ED8F1EB007C46C2 /* IOSFinder.swift */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		AB1D27121ED8F1D0007C46C2 /* Android */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D27151ED8F201007C46C2 /* AndroidFinder.swift */,
+			);
+			path = Android;
+			sourceTree = "<group>";
+		};
+		AB1D27171ED8F30A007C46C2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AB1D27181ED8F315007C46C2 /* FinderProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		AB9777C31ED7B49C00222EAC /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_14 /* Commander.swift */,
-				OBJ_15 /* Discovery.swift */,
+				AB1D26FC1ED8D41F007C46C2 /* Discovery */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -117,6 +184,7 @@
 		OBJ_16 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				AB1D27101ED8F030007C46C2 /* Mayon */,
 				OBJ_17 /* MayonFrameworkTests */,
 			);
 			name = Tests;
@@ -172,12 +240,11 @@
 			children = (
 				OBJ_43 /* MayonFramework.framework */,
 				OBJ_44 /* mayon */,
-				OBJ_45 /* MayonFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -186,7 +253,6 @@
 				OBJ_19 /* Dependencies */,
 				OBJ_41 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -202,6 +268,9 @@
 		OBJ_8 /* MayonFramework */ = {
 			isa = PBXGroup;
 			children = (
+				AB1D27171ED8F30A007C46C2 /* Protocol */,
+				AB1D27041ED8D83A007C46C2 /* Common */,
+				AB1D27011ED8D4AF007C46C2 /* Platform */,
 				OBJ_9 /* Helper */,
 			);
 			name = MayonFramework;
@@ -253,23 +322,6 @@
 			productReference = OBJ_44 /* mayon */;
 			productType = "com.apple.product-type.tool";
 		};
-		OBJ_92 /* MayonFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_93 /* Build configuration list for PBXNativeTarget "MayonFrameworkTests" */;
-			buildPhases = (
-				OBJ_96 /* Sources */,
-				OBJ_98 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_102 /* PBXTargetDependency */,
-			);
-			name = MayonFrameworkTests;
-			productName = MayonFrameworkTests;
-			productReference = OBJ_45 /* MayonFrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,14 +337,13 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				OBJ_81 /* mayon */,
 				OBJ_72 /* MayonFramework */,
-				OBJ_92 /* MayonFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,7 +384,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				AB1D27191ED8F315007C46C2 /* FinderProtocol.swift in Sources */,
+				AB1D27091ED8E191007C46C2 /* CommandBus.swift in Sources */,
+				AB1D27141ED8F1EB007C46C2 /* IOSFinder.swift in Sources */,
+				AB1D270F1ED8E26F007C46C2 /* DiscoveryOption.swift in Sources */,
+				AB1D270B1ED8E1A8007C46C2 /* Discovery.swift in Sources */,
+				AB1D271D1ED8F516007C46C2 /* Finder.swift in Sources */,
+				AB1D27031ED8D4B5007C46C2 /* Platform.swift in Sources */,
 				OBJ_77 /* Version.swift in Sources */,
+				AB1D27161ED8F201007C46C2 /* AndroidFinder.swift in Sources */,
+				AB1D271B1ED8F33F007C46C2 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,29 +401,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				AB1D26FE1ED8D41F007C46C2 /* Discover.swift in Sources */,
 				OBJ_86 /* main.swift in Sources */,
 				OBJ_87 /* Commander.swift in Sources */,
-				OBJ_88 /* Discovery.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_96 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_97 /* MayonFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_102 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_72 /* MayonFramework */;
-			targetProxy = AB9777C01ED79F9200222EAC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		OBJ_3 /* Debug */ = {
@@ -421,6 +465,7 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Mayon.xcodeproj/MayonFramework_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MayonFramework;
@@ -442,6 +487,7 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Mayon.xcodeproj/MayonFramework_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MayonFramework;
@@ -462,6 +508,7 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/mayon/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-sectcreate",
@@ -487,6 +534,7 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/mayon/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-sectcreate",
@@ -499,40 +547,6 @@
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				TARGET_NAME = mayon;
-			};
-			name = Release;
-		};
-		OBJ_94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Mayon.xcodeproj/MayonFrameworkTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = MayonFrameworkTests;
-			};
-			name = Debug;
-		};
-		OBJ_95 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Mayon.xcodeproj/MayonFrameworkTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = MayonFrameworkTests;
 			};
 			name = Release;
 		};
@@ -562,15 +576,6 @@
 			buildConfigurations = (
 				OBJ_83 /* Debug */,
 				OBJ_84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_93 /* Build configuration list for PBXNativeTarget "MayonFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_94 /* Debug */,
-				OBJ_95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

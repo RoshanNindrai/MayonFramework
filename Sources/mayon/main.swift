@@ -5,12 +5,14 @@
 //  Created by Roshan Nindrai on 5/24/17.
 //
 //
-
+import Foundation
 import SwiftCLI
 
 // Register all the commands that were created to the CLI
 
 let commander = Commander()
-commander.register(Discovery())
 
-_ = CLI.debugGo(with: "mayon version")
+commander.register(Discover())
+
+let resultCode = CLI.debugGo(with: "mayon discover")
+exit(resultCode)
