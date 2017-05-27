@@ -14,10 +14,6 @@ struct Commander {
 
     var name = "mayon"
 
-    var version: String? = {
-       return Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as? String
-    }()
-
     var shortDescription: String = "A tool to perform Automated UITesting on Mobile devices"
 
     init() {
