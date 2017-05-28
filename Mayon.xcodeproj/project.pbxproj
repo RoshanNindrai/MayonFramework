@@ -35,6 +35,8 @@
 		AB1D271A1ED8F33F007C46C2 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		AB1D271C1ED8F516007C46C2 /* Finder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finder.swift; sourceTree = "<group>"; };
 		AB9777C41ED7B49C00222EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD3DC911EDB72A5006CABEE /* MobileDevice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileDevice-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABD3DC921EDB72A5006CABEE /* MobileDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
 		OBJ_10 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		OBJ_12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Commander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commander.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		AB1D27111ED8F1D0007C46C2 /* Apple */ = {
 			isa = PBXGroup;
 			children = (
+				ABD3DC901EDB72A5006CABEE /* MobileDevice */,
 				AB1D27131ED8F1EB007C46C2 /* IOSFinder.swift */,
 			);
 			path = Apple;
@@ -160,6 +163,15 @@
 			);
 			name = "Supporting files";
 			path = "Sources/mayon/Supporting files";
+			sourceTree = "<group>";
+		};
+		ABD3DC901EDB72A5006CABEE /* MobileDevice */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3DC911EDB72A5006CABEE /* MobileDevice-Bridging-Header.h */,
+				ABD3DC921EDB72A5006CABEE /* MobileDevice.h */,
+			);
+			path = MobileDevice;
 			sourceTree = "<group>";
 		};
 		OBJ_11 /* mayon */ = {
@@ -361,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swift build";
+			shellScript = ./Scripts/Build.sh;
 		};
 		AB9777C61ED7B4ED00222EAC /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -466,12 +478,18 @@
 				INFOPLIST_FILE = Mayon.xcodeproj/MayonFramework_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					MobileDevice,
+					"-F/System/Library/PrivateFrameworks",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MayonFramework;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/MayonFramework/Platform/Apple/MobileDevice/MobileDevice-Bridging-Header.h";
 				TARGET_NAME = MayonFramework;
 			};
 			name = Debug;
@@ -488,12 +506,18 @@
 				INFOPLIST_FILE = Mayon.xcodeproj/MayonFramework_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					MobileDevice,
+					"-F/System/Library/PrivateFrameworks",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MayonFramework;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/MayonFramework/Platform/Apple/MobileDevice/MobileDevice-Bridging-Header.h";
 				TARGET_NAME = MayonFramework;
 			};
 			name = Release;
