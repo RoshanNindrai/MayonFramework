@@ -373,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = ./Scripts/Build.sh;
+			shellScript = ./Scripts/Build;
 		};
 		AB9777C61ED7B4ED00222EAC /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
