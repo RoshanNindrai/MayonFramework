@@ -21,5 +21,4 @@ extension IOSFinder: FinderProtocol {
         print("IOSFinder called")
         return devices
     }
-
 }
