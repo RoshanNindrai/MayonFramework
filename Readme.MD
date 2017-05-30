@@ -11,7 +11,7 @@ Tech Debt
 
 # Team
 
-The following are the team members and thier contact Information.
+The following are the team members and their contact Information.
 - Roshan Balaji (roshan.nindrai@gmail.com)
 
 # Prerequisite 
