@@ -16,8 +16,9 @@
 		AB1D27161ED8F201007C46C2 /* AndroidFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D27151ED8F201007C46C2 /* AndroidFinder.swift */; };
 		AB1D27191ED8F315007C46C2 /* FinderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D27181ED8F315007C46C2 /* FinderProtocol.swift */; };
 		AB1D271B1ED8F33F007C46C2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D271A1ED8F33F007C46C2 /* Device.swift */; };
-		AB1D271D1ED8F516007C46C2 /* Finder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D271C1ED8F516007C46C2 /* Finder.swift */; };
+		AB1D271D1ED8F516007C46C2 /* FinderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1D271C1ED8F516007C46C2 /* FinderFactory.swift */; };
 		AB9777C21ED7A10E00222EAC /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* MayonFramework.framework */; };
+		ABEF09B31EDE48CE00B7668E /* AllFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF09B21EDE48CE00B7668E /* AllFinder.swift */; };
 		OBJ_77 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Version.swift */; };
 		OBJ_86 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
 		OBJ_87 /* Commander.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Commander.swift */; };
@@ -33,10 +34,11 @@
 		AB1D27151ED8F201007C46C2 /* AndroidFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndroidFinder.swift; sourceTree = "<group>"; };
 		AB1D27181ED8F315007C46C2 /* FinderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderProtocol.swift; sourceTree = "<group>"; };
 		AB1D271A1ED8F33F007C46C2 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		AB1D271C1ED8F516007C46C2 /* Finder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finder.swift; sourceTree = "<group>"; };
+		AB1D271C1ED8F516007C46C2 /* FinderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderFactory.swift; sourceTree = "<group>"; };
 		AB9777C41ED7B49C00222EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD3DC911EDB72A5006CABEE /* MobileDevice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileDevice-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABD3DC921EDB72A5006CABEE /* MobileDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
+		ABEF09B21EDE48CE00B7668E /* AllFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllFinder.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		OBJ_12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Commander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commander.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		AB1D27011ED8D4AF007C46C2 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
+				ABEF09B11EDE48C000B7668E /* Common */,
 				AB1D27111ED8F1D0007C46C2 /* Apple */,
 				AB1D27121ED8F1D0007C46C2 /* Android */,
 				AB1D27021ED8D4B5007C46C2 /* Platform.swift */,
@@ -110,7 +113,7 @@
 				AB1D27051ED8D849007C46C2 /* Discovery.swift */,
 				AB1D27071ED8E084007C46C2 /* CommandBus.swift */,
 				AB1D271A1ED8F33F007C46C2 /* Device.swift */,
-				AB1D271C1ED8F516007C46C2 /* Finder.swift */,
+				AB1D271C1ED8F516007C46C2 /* FinderFactory.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -172,6 +175,14 @@
 				ABD3DC921EDB72A5006CABEE /* MobileDevice.h */,
 			);
 			path = MobileDevice;
+			sourceTree = "<group>";
+		};
+		ABEF09B11EDE48C000B7668E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ABEF09B21EDE48CE00B7668E /* AllFinder.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		OBJ_11 /* mayon */ = {
@@ -401,7 +412,8 @@
 				AB1D27141ED8F1EB007C46C2 /* IOSFinder.swift in Sources */,
 				AB1D270F1ED8E26F007C46C2 /* DiscoveryOption.swift in Sources */,
 				AB1D270B1ED8E1A8007C46C2 /* Discovery.swift in Sources */,
-				AB1D271D1ED8F516007C46C2 /* Finder.swift in Sources */,
+				AB1D271D1ED8F516007C46C2 /* FinderFactory.swift in Sources */,
+				ABEF09B31EDE48CE00B7668E /* AllFinder.swift in Sources */,
 				AB1D27031ED8D4B5007C46C2 /* Platform.swift in Sources */,
 				OBJ_77 /* Version.swift in Sources */,
 				AB1D27161ED8F201007C46C2 /* AndroidFinder.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AndroidFinder {
+final class AndroidFinder {
     var devices: [Device] = []
 }
 

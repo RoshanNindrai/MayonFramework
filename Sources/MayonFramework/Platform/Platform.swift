@@ -14,7 +14,7 @@ import Foundation
 /// - android: Represents the Android platform
 /// - all: Represents both iOS and Android platforms
 public enum Platform: String {
+    case `default`
     case iOS
-    case android = "Android"
-    case `default` = "All"
+    case android
 }

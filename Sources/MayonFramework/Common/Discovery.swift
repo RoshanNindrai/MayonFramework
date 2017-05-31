@@ -23,7 +23,7 @@ public extension Discovery {
 
     /// This method creates appropriate Device finder based on option and runs discovery
     func run() -> [Device] {
-        let finder = Finder(platform: option.platform)
-        return finder.run()
+        let finder = FinderFactory.finderFor(platform: option.platform)
+        return finder.find()
     }
 }
