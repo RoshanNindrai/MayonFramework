@@ -33,4 +33,8 @@ extension Commander {
         CLI.register(command: command)
     }
 
+    /// Registers all commands
+    func register() {
+        register(Discover())
+    }
 }

@@ -13,11 +13,8 @@ final class AllFinder {
 }
 
 extension AllFinder: FinderProtocol {
-
-    /// Runs platform specific code to find devices connected to the machine
-    ///
-    /// - Returns: A list of devices that was found for all platform type
-    func find() -> [Device] {
-        return devices
+    /// Runs platform specific code to find devices connected to the machine till timeout period
+    func find(_ timeout: Double) {
+        print(devices)
     }
 }

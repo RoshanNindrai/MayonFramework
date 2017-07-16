@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_46"
+               BlueprintIdentifier = "OBJ_65"
                BuildableName = "SwiftCLI.framework"
                BlueprintName = "SwiftCLI"
                ReferencedContainer = "container:Mayon.xcodeproj">
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_72"
-               BuildableName = "MayonFramework.framework"
-               BlueprintName = "MayonFramework"
+               BlueprintIdentifier = "OBJ_91"
+               BuildableName = "mayon"
+               BlueprintName = "mayon"
                ReferencedContainer = "container:Mayon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_81"
-               BuildableName = "mayon"
-               BlueprintName = "mayon"
+               BlueprintIdentifier = "OBJ_104"
+               BuildableName = "MayonFramework.framework"
+               BlueprintName = "MayonFramework"
                ReferencedContainer = "container:Mayon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,7 +60,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_92"
+               BlueprintIdentifier = "OBJ_123"
                BuildableName = "MayonFrameworkTests.xctest"
                BlueprintName = "MayonFrameworkTests"
                ReferencedContainer = "container:Mayon.xcodeproj">
@@ -83,7 +83,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_46"
+            BlueprintIdentifier = "OBJ_65"
             BuildableName = "SwiftCLI.framework"
             BlueprintName = "SwiftCLI"
             ReferencedContainer = "container:Mayon.xcodeproj">

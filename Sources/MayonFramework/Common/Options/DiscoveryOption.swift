@@ -14,8 +14,12 @@ public struct DiscoveryOption {
     /// The platform type we are targetting
     let platform: Platform
 
-    public init(platform: Platform) {
+    /// Wait tme for discovery command to exit
+    let timeout: Double
+
+    public init(platform: Platform, timeout: Double) {
         self.platform = platform
+        self.timeout = timeout
     }
 }
 

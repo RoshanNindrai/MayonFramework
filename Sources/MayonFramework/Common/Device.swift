@@ -12,7 +12,7 @@ import Foundation
 public struct Device {
 
     /// The id of the device
-    var uuid: UUID
+    var uuid: String
 
     /// The name of the device ex Roshan's iPhone
     var name: String
@@ -22,4 +22,12 @@ public struct Device {
 
     /// The os Version as string
     var version: String
+}
+
+// MARK: - CustomStringConvertible conformance
+extension Device: CustomStringConvertible {
+    /// Device information within console
+    public var description: String {
+        return "\(platform): \(name) \(uuid)"
+    }
 }

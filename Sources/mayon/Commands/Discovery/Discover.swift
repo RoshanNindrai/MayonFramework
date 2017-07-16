@@ -23,6 +23,7 @@ final class Discover {
         return "List all the devices both android and iOS that are connected"
     }
 
+    let timeout = OptionalParameter()
     let iOS = Flag("-i", "--ios", usage: "Search for connected iOS devices")
     let android = Flag("-a", "--android", usage: "Search for connected Android devices")
 
@@ -51,9 +52,11 @@ extension Discover: Command {
     ///
     /// - Throws: CLIError if command cannot execute successfully
     func execute() throws {
-        let discoveryOption = DiscoveryOption(platform: platform)
+        let timeo = timeout.value != nil ? Double(timeout.value!) : 10.0
+        print("Running Discovery for with timeout \(timeo!) seconds...")
+        let discoveryOption = DiscoveryOption(platform: platform, timeout: timeo!)
         let discovery = Discovery(discoveryOption)
-        print(discovery.run())
+        discovery.run()
     }
 
 }

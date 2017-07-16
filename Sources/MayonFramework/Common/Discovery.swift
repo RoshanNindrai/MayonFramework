@@ -22,8 +22,8 @@ public struct Discovery {
 public extension Discovery {
 
     /// This method creates appropriate Device finder based on option and runs discovery
-    func run() -> [Device] {
+    func run() {
         let finder = FinderFactory.finderFor(platform: option.platform)
-        return finder.find()
+        finder.find(option.timeout)
     }
 }

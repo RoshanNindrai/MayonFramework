@@ -11,12 +11,12 @@ import Foundation
 public struct FinderFactory {
     public static func finderFor(platform: Platform) -> FinderProtocol {
         switch platform {
-            case .iOS:
-                return IOSFinder()
-            case .android:
-                return AndroidFinder()
-            default:
-                return AllFinder()
+        case .iOS:
+            return IOSFinder()
+        case .android:
+            return AndroidFinder()
+        default:
+            return AllFinder()
         }
     }
 }

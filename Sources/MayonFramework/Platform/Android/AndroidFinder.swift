@@ -13,13 +13,8 @@ final class AndroidFinder {
 }
 
 extension AndroidFinder: FinderProtocol {
-
-    /// Runs platform specific code to find devices connected to the machine
-    ///
-    /// - Returns: A list of devices that was found for that specific platform type
-    func find() -> [Device] {
-        print("AndroidFinder called")
-        return devices
+    /// Runs platform specific code to find devices connected to the machine till timeout period
+    func find(_ timeout: Double) {
+        print(devices)
     }
-
 }
