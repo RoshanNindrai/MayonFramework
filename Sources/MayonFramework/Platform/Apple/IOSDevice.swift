@@ -17,6 +17,7 @@ extension Device {
         AMDeviceConnect(amdevice!.pointee.dev)
         uuid = (AMDeviceCopyDeviceIdentifier(amdevice!.pointee.dev).takeRetainedValue() as String)
 
+        // This will return nil if the device was unplugged during discovery
         guard (AMDeviceCopyValue(amdevice!.pointee.dev, nil, "DeviceName" as CFString) as? String) != nil else {
             print("Device \(uuid) removed")
             return nil
