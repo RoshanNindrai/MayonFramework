@@ -15,6 +15,7 @@ final class AllFinder {
 extension AllFinder: FinderProtocol {
     /// Runs platform specific code to find devices connected to the machine till timeout period
     func find(_ timeout: Double) {
-        print(devices)
+        IOSFinder().find(timeout)
+        AndroidFinder().find(timeout)
     }
 }

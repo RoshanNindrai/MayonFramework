@@ -25,7 +25,6 @@ struct Commander {
 
 // MARK: - Helper methods
 extension Commander {
-
     /// Register a list of commands that is supported by Mayon
     ///
     /// - Parameter commands: A swiftCLI Command to be registered

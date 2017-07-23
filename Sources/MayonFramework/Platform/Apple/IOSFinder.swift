@@ -18,10 +18,7 @@ extension IOSFinder: FinderProtocol {
     /// Runs platform specific code to find devices connected to the machine till timeout period
     func find(_ timeout: Double) {
         AMDeviceNotificationSubscribe({ (amdevice, _) in
-            print(Device(amdevice: amdevice) ?? "Failed during Device Creation")
+            Locker.add(Device(amdevice: amdevice))
         }, 0, 0, 0, notificationPointer)
-        CommandBus.main.asyncAfter(deadline: DispatchTime.init(uptimeNanoseconds: 0) + timeout) {
-            exit(0)
-        }
     }
 }

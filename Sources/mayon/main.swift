@@ -11,9 +11,7 @@ import SwiftCLI
 // Register all the commands that were created to the CLI
 
 let commander = Commander()
-var resultCode: Int32 = -1
-
 commander.register()
-_ = CLI.debugGo(with: "mayon discover --ios")
+_ = CLI.debugGo(with: "mayon discover")
 
 CFRunLoopRun()

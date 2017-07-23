@@ -15,6 +15,17 @@ final class AndroidFinder {
 extension AndroidFinder: FinderProtocol {
     /// Runs platform specific code to find devices connected to the machine till timeout period
     func find(_ timeout: Double) {
-        print(devices)
+
+        guard FileManager.default.fileExists(atPath: Defaultpath.KADBPATH) else {
+            print("ADB cannot be found at \(Defaultpath.KADBPATH)")
+            exit(1)
+        }
+
+        let adbProcess = Process()
+        adbProcess.launchPath = Defaultpath.KADBPATH
+        adbProcess.arguments = ["devices", "-l"]
+        adbProcess.launch()
+        adbProcess.waitUntilExit()
+
     }
 }

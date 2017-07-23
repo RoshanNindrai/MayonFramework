@@ -26,6 +26,7 @@ extension Device {
         name = (AMDeviceCopyValue(amdevice!.pointee.dev, nil, "DeviceName" as CFString) as? String)!
         version =  (AMDeviceCopyValue(amdevice!.pointee.dev, nil, "DeviceColor" as CFString) as? String)!
         platform = .iOS
+        proxy = .iOS((amdevice?.pointee.dev.pointee)!)
         AMDeviceRelease(amdevice!.pointee.dev)
     }
 }

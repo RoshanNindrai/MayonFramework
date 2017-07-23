@@ -8,6 +8,10 @@
 
 import Foundation
 
+public enum Proxy {
+    case iOS(am_device)
+}
+
 /// Represents an actual mobile device
 public struct Device {
 
@@ -22,12 +26,16 @@ public struct Device {
 
     /// The os Version as string
     var version: String
+
+    /// The proxy to internal representation of device
+    var proxy: Proxy?
+
 }
 
 // MARK: - CustomStringConvertible conformance
 extension Device: CustomStringConvertible {
     /// Device information within console
     public var description: String {
-        return "\(platform): \(name) \(uuid)"
+        return "\(platform): '\(name)' \(uuid)"
     }
 }

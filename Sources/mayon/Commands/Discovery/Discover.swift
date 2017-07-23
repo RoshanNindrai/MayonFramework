@@ -52,11 +52,15 @@ extension Discover: Command {
     ///
     /// - Throws: CLIError if command cannot execute successfully
     func execute() throws {
-        let timeo = timeout.value != nil ? Double(timeout.value!) : 10.0
-        print("Running Discovery for with timeout \(timeo!) seconds...")
+        let timeo = timeout.value != nil ? Double(timeout.value!) : MayonFramework.DefaultSetting.KDISCOVERYTIMEOUT
+        print("Running Discovery for \(platform) with timeout \(timeo!) seconds...")
         let discoveryOption = DiscoveryOption(platform: platform, timeout: timeo!)
         let discovery = Discovery(discoveryOption)
         discovery.run()
+        CommandBus.main.asyncAfter(deadline: DispatchTime(uptimeNanoseconds: 0) + timeo!) {
+            Locker.printList()
+            exit(0)
+        }
     }
 
 }

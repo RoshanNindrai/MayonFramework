@@ -8,12 +8,12 @@
 
 import Foundation
 
-final class CommandBus {
+public final class CommandBus {
 
-    static let main = { DispatchQueue.main }()
+    public static let main = { DispatchQueue.main }()
 
     /// A queue that is used to run all discovery Async Tasks
-    static let discoveryQueue: DispatchQueue = {
+    public static let discoveryQueue: DispatchQueue = {
         DispatchQueue(label: "com.uniqlabs.mayon.discoveryQueue",
                       qos: .userInteractive,
                       target: .global(qos: .userInteractive)
@@ -21,7 +21,7 @@ final class CommandBus {
     }()
 
     /// A queue that is used to hold all print queries
-    static let printerQueue: DispatchQueue = {
+    public static let printerQueue: DispatchQueue = {
         DispatchQueue(label: "com.uniqlabs.mayon.printerQueue",
                       qos: .userInteractive,
                       target: .global(qos: .userInteractive)

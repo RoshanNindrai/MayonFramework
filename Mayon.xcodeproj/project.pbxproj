@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB8E83341F1BAD6900D10F26 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E83331F1BAD6900D10F26 /* Consts.swift */; };
+		AB8E83351F1BAD6900D10F26 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E83331F1BAD6900D10F26 /* Consts.swift */; };
+		AB8E83381F1BEFEA00D10F26 /* Locker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E83361F1BEFEA00D10F26 /* Locker.swift */; };
 		ABFE5F871F1AFCD9002B1C8B /* IOSDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE5F861F1AFCD9002B1C8B /* IOSDevice.swift */; };
 		OBJ_100 /* SwiftCLI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* SwiftCLI.framework */; };
 		OBJ_101 /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* MayonFramework.framework */; };
@@ -89,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB8E83331F1BAD6900D10F26 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		AB8E83361F1BEFEA00D10F26 /* Locker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locker.swift; sourceTree = "<group>"; };
 		ABE051AC1F1AD393003119DD /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
 		ABE051AD1F1AD393003119DD /* MobileDevice-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MobileDevice-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABFE5F861F1AFCD9002B1C8B /* IOSDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSDevice.swift; sourceTree = "<group>"; };
@@ -263,6 +268,8 @@
 				OBJ_28 /* Device.swift */,
 				OBJ_29 /* FinderFactory.swift */,
 				OBJ_30 /* Options */,
+				AB8E83331F1BAD6900D10F26 /* Consts.swift */,
+				AB8E83361F1BEFEA00D10F26 /* Locker.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -519,11 +526,13 @@
 				OBJ_109 /* Platform.swift in Sources */,
 				OBJ_110 /* FinderProtocol.swift in Sources */,
 				OBJ_111 /* Discovery.swift in Sources */,
+				AB8E83351F1BAD6900D10F26 /* Consts.swift in Sources */,
 				OBJ_112 /* CommandBus.swift in Sources */,
 				OBJ_113 /* Device.swift in Sources */,
 				ABFE5F871F1AFCD9002B1C8B /* IOSDevice.swift in Sources */,
 				OBJ_114 /* FinderFactory.swift in Sources */,
 				OBJ_115 /* Version.swift in Sources */,
+				AB8E83381F1BEFEA00D10F26 /* Locker.swift in Sources */,
 				OBJ_116 /* IOSFinder.swift in Sources */,
 				OBJ_117 /* AllFinder.swift in Sources */,
 				OBJ_118 /* AndroidFinder.swift in Sources */,
@@ -547,6 +556,7 @@
 				OBJ_71 /* Parameter.swift in Sources */,
 				OBJ_72 /* GlobalOptions.swift in Sources */,
 				OBJ_73 /* OptionRegistry.swift in Sources */,
+				AB8E83341F1BAD6900D10F26 /* Consts.swift in Sources */,
 				OBJ_74 /* CommandMessageGenerator.swift in Sources */,
 				OBJ_75 /* Option.swift in Sources */,
 				OBJ_76 /* CommandSignature.swift in Sources */,
