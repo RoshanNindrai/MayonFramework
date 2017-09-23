@@ -13,8 +13,6 @@ public struct FinderFactory {
         switch platform {
         case .iOS:
             return IOSFinder()
-        case .android:
-            return AndroidFinder()
         default:
             return AllFinder()
         }

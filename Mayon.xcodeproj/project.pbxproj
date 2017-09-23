@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB8138E21F76C6C7008B57C0 /* Install.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8138E01F76C674008B57C0 /* Install.swift */; };
+		AB8138E51F76C8A8008B57C0 /* InstallProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8138E31F76C778008B57C0 /* InstallProtocol.swift */; };
+		AB8138E71F76FB3E008B57C0 /* IOSDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8138E61F76FB3E008B57C0 /* IOSDeviceManager.swift */; };
 		AB8E83341F1BAD6900D10F26 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E83331F1BAD6900D10F26 /* Consts.swift */; };
 		AB8E83351F1BAD6900D10F26 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E83331F1BAD6900D10F26 /* Consts.swift */; };
-		AB8E83381F1BEFEA00D10F26 /* Locker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E83361F1BEFEA00D10F26 /* Locker.swift */; };
+		AB9408E61F771AC20088E911 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9408E51F771AC20088E911 /* Error.swift */; };
 		ABFE5F871F1AFCD9002B1C8B /* IOSDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFE5F861F1AFCD9002B1C8B /* IOSDevice.swift */; };
 		OBJ_100 /* SwiftCLI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* SwiftCLI.framework */; };
 		OBJ_101 /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* MayonFramework.framework */; };
@@ -24,7 +27,6 @@
 		OBJ_117 /* AllFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AllFinder.swift */; };
 		OBJ_118 /* AndroidFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* AndroidFinder.swift */; };
 		OBJ_119 /* DiscoveryOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* DiscoveryOption.swift */; };
-		OBJ_121 /* SwiftCLI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* SwiftCLI.framework */; };
 		OBJ_128 /* MayonFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* MayonFrameworkTests.swift */; };
 		OBJ_130 /* SwiftCLI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* SwiftCLI.framework */; };
 		OBJ_131 /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* MayonFramework.framework */; };
@@ -92,8 +94,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB8138E01F76C674008B57C0 /* Install.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Install.swift; sourceTree = "<group>"; };
+		AB8138E31F76C778008B57C0 /* InstallProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallProtocol.swift; sourceTree = "<group>"; };
+		AB8138E61F76FB3E008B57C0 /* IOSDeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSDeviceManager.swift; sourceTree = "<group>"; };
 		AB8E83331F1BAD6900D10F26 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
-		AB8E83361F1BEFEA00D10F26 /* Locker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locker.swift; sourceTree = "<group>"; };
+		AB9408E51F771AC20088E911 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		ABE051AC1F1AD393003119DD /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
 		ABE051AD1F1AD393003119DD /* MobileDevice-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MobileDevice-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABFE5F861F1AFCD9002B1C8B /* IOSDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSDevice.swift; sourceTree = "<group>"; };
@@ -145,7 +150,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_121 /* SwiftCLI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* Discover.swift */,
+				AB8138E01F76C674008B57C0 /* Install.swift */,
 			);
 			path = Discovery;
 			sourceTree = "<group>";
@@ -232,6 +237,8 @@
 				ABE051AB1F1AD393003119DD /* MobileDevice */,
 				OBJ_18 /* IOSFinder.swift */,
 				ABFE5F861F1AFCD9002B1C8B /* IOSDevice.swift */,
+				AB8138E61F76FB3E008B57C0 /* IOSDeviceManager.swift */,
+				AB9408E51F771AC20088E911 /* Error.swift */,
 			);
 			path = Apple;
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_24 /* FinderProtocol.swift */,
+				AB8138E31F76C778008B57C0 /* InstallProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -269,7 +277,6 @@
 				OBJ_29 /* FinderFactory.swift */,
 				OBJ_30 /* Options */,
 				AB8E83331F1BAD6900D10F26 /* Consts.swift */,
-				AB8E83361F1BEFEA00D10F26 /* Locker.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -530,9 +537,10 @@
 				OBJ_112 /* CommandBus.swift in Sources */,
 				OBJ_113 /* Device.swift in Sources */,
 				ABFE5F871F1AFCD9002B1C8B /* IOSDevice.swift in Sources */,
+				AB8138E51F76C8A8008B57C0 /* InstallProtocol.swift in Sources */,
+				AB8138E71F76FB3E008B57C0 /* IOSDeviceManager.swift in Sources */,
 				OBJ_114 /* FinderFactory.swift in Sources */,
 				OBJ_115 /* Version.swift in Sources */,
-				AB8E83381F1BEFEA00D10F26 /* Locker.swift in Sources */,
 				OBJ_116 /* IOSFinder.swift in Sources */,
 				OBJ_117 /* AllFinder.swift in Sources */,
 				OBJ_118 /* AndroidFinder.swift in Sources */,
@@ -566,6 +574,7 @@
 				OBJ_80 /* Input.swift in Sources */,
 				OBJ_81 /* Router.swift in Sources */,
 				OBJ_82 /* ChainableCommand.swift in Sources */,
+				AB9408E61F771AC20088E911 /* Error.swift in Sources */,
 				OBJ_83 /* OptionRecognizer.swift in Sources */,
 				OBJ_84 /* VersionCommand.swift in Sources */,
 				OBJ_85 /* OptionGroup.swift in Sources */,
@@ -583,6 +592,7 @@
 				OBJ_96 /* main.swift in Sources */,
 				OBJ_97 /* Commander.swift in Sources */,
 				OBJ_98 /* Discover.swift in Sources */,
+				AB8138E21F76C6C7008B57C0 /* Install.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,9 +640,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-F/System/Library/PrivateFrameworks",
 					"-framework",
 					MobileDevice,
-					"-F/System/Library/PrivateFrameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MayonFramework;
@@ -657,9 +667,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-F/System/Library/PrivateFrameworks",
 					"-framework",
 					MobileDevice,
-					"-F/System/Library/PrivateFrameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MayonFramework;

@@ -12,6 +12,6 @@ import SwiftCLI
 
 let commander = Commander()
 commander.register()
-_ = CLI.debugGo(with: "mayon discover")
+_ = CLI.debugGo(with: "mayon discover -i")
 
 CFRunLoopRun()

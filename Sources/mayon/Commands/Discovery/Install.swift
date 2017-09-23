@@ -1,31 +1,32 @@
 //
-//  Discover.swift
+//  Install.swift
 //  Mayon
 //
-//  Created by Roshan Nindrai on 5/25/17.
+//  Created by Roshan Nindrai on 9/23/17.
 //
 //
+
+import Foundation
 
 import Foundation
 import SwiftCLI
 import MayonFramework
 
 /// Command that helps to list all devices that are connected to the machine
-final class Discover {
+final class Install {
 
     /// The name of the command; used to route arguments to commands
     var name: String {
-        return "discover"
+        return "install"
     }
 
     /// A short description of the Discovery Command
     var shortDescription: String {
-        return "List all the devices both android and iOS that are connected"
+        return "Install the application on specified deviceid or all devices given .ipa file"
     }
 
-    let timeout = OptionalParameter()
-    let iOS = Flag("-i", "--ios", usage: "Search for connected iOS devices")
-    let android = Flag("-a", "--android", usage: "Search for connected Android devices")
+    let iOS = Flag("-i", "--ios", usage: "Install the application on iOS device(s)")
+    let android = Flag("-a", "--android", usage: "Install the application on Android device(s)")
 
     var optionGroups: [OptionGroup] {
         let osType = OptionGroup(options: [iOS, android], restriction: .atMostOne)
@@ -35,7 +36,7 @@ final class Discover {
 }
 
 // MARK: - Command conformance
-extension Discover: Command {
+extension Install: Command {
 
     /// Returns requested platform type from flags
     var platform: Platform {
@@ -50,13 +51,6 @@ extension Discover: Command {
     ///
     /// - Throws: CLIError if command cannot execute successfully
     func execute() throws {
-        let timeo = timeout.value != nil ? Double(timeout.value!) : nil
-        print("Running Discovery for \(platform) ...")
-        let discoveryOption = DiscoveryOption(platform: platform, timeout: timeo)
-        let discovery = Discovery(discoveryOption) { devices in
-            print(devices)
-            exit(0)
-        }
-        discovery.run()
+
     }
 }

@@ -10,11 +10,16 @@ import Foundation
 
 /// List of platforms supported by mayon
 ///
+/// - defailt: Represents the default Platform which is currently iOS
 /// - iOS: Represents the iOS platform
-/// - android: Represents the Android platform
-/// - all: Represents both iOS and Android platforms
 public enum Platform: String {
     case `default`
     case iOS
-    case android
+}
+
+/// Installer that defines installer for each platform
+///
+/// - iOS: The installer type for iOS
+public enum ApplicationArtifact {
+    case iOS([Device], URL)
 }

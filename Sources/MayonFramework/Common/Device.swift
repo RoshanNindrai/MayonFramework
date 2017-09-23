@@ -13,29 +13,28 @@ public enum Proxy {
 }
 
 /// Represents an actual mobile device
-public struct Device {
+public protocol Device: CustomStringConvertible {
 
     /// The id of the device
-    var uuid: String
+    var deviceId: String { get }
 
     /// The name of the device ex Roshan's iPhone
-    var name: String
+    var name: String { get }
 
     /// The platform Type of the device
-    var platform: Platform
+    var platform: Platform { get }
 
     /// The os Version as string
-    var version: String
+    var version: String { get }
 
     /// The proxy to internal representation of device
-    var proxy: Proxy?
+    var proxy: Proxy? { get }
 
 }
 
-// MARK: - CustomStringConvertible conformance
-extension Device: CustomStringConvertible {
+extension Device {
     /// Device information within console
     public var description: String {
-        return "\(platform): '\(name)' \(uuid)"
+        return "\(platform): '\(name)' \(deviceId)"
     }
 }

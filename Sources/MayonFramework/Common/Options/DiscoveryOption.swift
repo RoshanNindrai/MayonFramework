@@ -17,9 +17,10 @@ public struct DiscoveryOption {
     /// Wait tme for discovery command to exit
     let timeout: Double
 
-    public init(platform: Platform, timeout: Double) {
+    public init(platform: Platform,
+                timeout: Double?) {
         self.platform = platform
-        self.timeout = timeout
+        self.timeout = timeout ?? DefaultSetting.KDISCOVERYTIMEOUT
     }
 }
 
