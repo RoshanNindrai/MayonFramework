@@ -3,8 +3,7 @@
 
 Mayon is an Automation server, written in swift. The automation server can be used to host physical devices against which tests can be executed.
 
-Tech Debt
-=
+# Info
   - Mayon currently supports iOS (7.0 and above)
   - written Swift 3.0
   - Recommended IDE Xcode 8.3
