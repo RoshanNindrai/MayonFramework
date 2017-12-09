@@ -24,8 +24,8 @@ final class Discover {
     }
 
     let timeout = OptionalParameter()
-    let iOS = Flag("-i", "--ios", usage: "Search for connected iOS devices")
-    let android = Flag("-a", "--android", usage: "Search for connected Android devices")
+    let iOS = Flag("-i", "--ios", description: "Search for connected iOS devices")
+    let android = Flag("-a", "--android", description: "Search for connected Android devices")
 
     var optionGroups: [OptionGroup] {
         let osType = OptionGroup(options: [iOS, android], restriction: .atMostOne)

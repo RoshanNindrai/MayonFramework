@@ -13,7 +13,7 @@ public typealias DeviceRack = [String:Device]
 public typealias DiscoveryCallback = ([Device]) -> Void
 
 /// All the platform Finder types should conform to this protocol
-public protocol FinderProtocol : class {
+public protocol FinderProtocol: class {
 
     static var devices: DeviceRack { get set }
 

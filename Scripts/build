@@ -22,8 +22,7 @@ build ()
     # Specifying the required framework
     # Adding Objc bridging header
 
-    swift build -Xlinker -v \
-    -Xlinker -F/System/Library/PrivateFrameworks \
+    swift build --target Mayon -Xlinker -v \
     -Xlinker -framework -Xlinker MobileDevice \
     -Xswiftc -import-objc-header -Xswiftc Sources/MayonFramework/Platform/Apple/mobiledevice/MobileDevice-Bridging-Header.h
 

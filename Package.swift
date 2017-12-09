@@ -1,17 +1,20 @@
-// swift-tools-version:3.1
+// swift-tools-version:4.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "Mayon",
-    targets: [
-        Target(name: "MayonFramework"),
-        Target(name: "mayon",
-               dependencies: [
-                .Target(name: "MayonFramework")
-               ])
+    products: [
+        .library(name: "MayonFramework", targets: ["MayonFramework"]),
+        .executable(name: "Mayon", targets: ["Mayon"]),
     ],
     dependencies: [
-        .Package(url: "https://github.com/jakeheis/SwiftCLI", majorVersion: 3, minor: 0)
+        .package(url: "https://github.com/jakeheis/SwiftCLI", .exact("4.0.0"))
+    ],
+    targets: [
+        .target(name: "Mayon", dependencies: ["MayonFramework", "SwiftCLI"]),
+        .target(name: "MayonFramework", dependencies: []),
+        .testTarget(name: "MayonFrameworkTests", dependencies: ["MayonFramework"]),
     ]
 )

@@ -13,27 +13,21 @@ import MayonFramework
 struct Commander {
 
     var name = "mayon"
-
+    fileprivate let cli: CLI
     var shortDescription: String = "A tool to perform Automated UITesting on Mobile devices"
 
     init() {
-        CLI.setup(name: name, version: Version.current,
-                  description: shortDescription)
+        cli = CLI(name: name, version: Version.current,
+                  description: shortDescription, commands: [Discover()])
     }
-
 }
 
-// MARK: - Helper methods
 extension Commander {
-    /// Register a list of commands that is supported by Mayon
-    ///
-    /// - Parameter commands: A swiftCLI Command to be registered
-    func register(_ command: Command) {
-        CLI.register(command: command)
-    }
 
-    /// Registers all commands
-    func register() {
-        register(Discover())
+    /// Forward the debugGo command to the internal cli object
+    ///
+    /// - Parameter with: The actual debug command to execute
+    func debugGo(with: String) -> Int32 {
+        return cli.debugGo(with: with)
     }
 }

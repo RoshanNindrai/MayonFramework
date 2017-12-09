@@ -25,8 +25,8 @@ final class Install {
         return "Install the application on specified deviceid or all devices given .ipa file"
     }
 
-    let iOS = Flag("-i", "--ios", usage: "Install the application on iOS device(s)")
-    let android = Flag("-a", "--android", usage: "Install the application on Android device(s)")
+    let iOS = Flag("-i", "--ios", description: "Install the application on iOS device(s)")
+    let android = Flag("-a", "--android", description: "Install the application on Android device(s)")
 
     var optionGroups: [OptionGroup] {
         let osType = OptionGroup(options: [iOS, android], restriction: .atMostOne)
