@@ -25,13 +25,9 @@ final class Install {
         return "Install the application on specified deviceid or all devices given .ipa file"
     }
 
-    let iOS = Flag("-i", "--ios", description: "Install the application on iOS device(s)")
-    let android = Flag("-a", "--android", description: "Install the application on Android device(s)")
-
-    var optionGroups: [OptionGroup] {
-        let osType = OptionGroup(options: [iOS, android], restriction: .atMostOne)
-        return [osType]
-    }
+    let deviceID = Key<String>("-d", "--device_id",
+                               description: "Install application on a specific device with device_id")
+    let applicationPath = Parameter()
 
 }
 
@@ -40,17 +36,18 @@ extension Install: Command {
 
     /// Returns requested platform type from flags
     var platform: Platform {
-        if iOS.value {
-            return Platform.iOS
-        } else {
-            return Platform.default
-        }
+        return Platform.iOS
     }
 
     /// Executes the command
     ///
     /// - Throws: CLIError if command cannot execute successfully
     func execute() throws {
-
+        let devices = deviceID.value != nil ? [deviceID.value!]: nil
+        let installer = Installer(.iOS(devices, URL(fileURLWithPath: self.applicationPath.value))) { _ in
+            print("Installation Done")
+            exit(0)
+        }
+        installer.run()
     }
 }

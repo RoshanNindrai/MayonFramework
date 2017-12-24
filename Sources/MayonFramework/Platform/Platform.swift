@@ -13,13 +13,21 @@ import Foundation
 /// - defailt: Represents the default Platform which is currently iOS
 /// - iOS: Represents the iOS platform
 public enum Platform: String {
-    case `default`
     case iOS
 }
 
 /// Installer that defines installer for each platform
 ///
 /// - iOS: The installer type for iOS
-public enum ApplicationArtifact {
-    case iOS([Device], URL)
+public enum Artifact {
+    case iOS([String]?, URL)
+}
+
+extension Artifact {
+    var platform: Platform {
+        switch self {
+        case .iOS(_, _):
+            return .iOS
+        }
+    }
 }

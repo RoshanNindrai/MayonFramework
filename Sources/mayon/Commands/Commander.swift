@@ -18,7 +18,7 @@ struct Commander {
 
     init() {
         cli = CLI(name: name, version: Version.current,
-                  description: shortDescription, commands: [Discover()])
+                  description: shortDescription, commands: [Discover(), Install()])
     }
 }
 

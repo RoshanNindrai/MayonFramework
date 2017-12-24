@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB6F88981FF01513009C4915 /* Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F88941FF014B5009C4915 /* Installer.swift */; };
+		AB6F889B1FF015DD009C4915 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F889A1FF015DD009C4915 /* Action.swift */; };
+		AB6F889E1FF069B3009C4915 /* IOSInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F889D1FF069B3009C4915 /* IOSInstaller.swift */; };
+		AB6F88A01FF06DBF009C4915 /* UninstallerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F889F1FF06DBF009C4915 /* UninstallerProtocol.swift */; };
 		OBJ_105 /* Commander.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Commander.swift */; };
 		OBJ_106 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Discover.swift */; };
 		OBJ_107 /* Install.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Install.swift */; };
@@ -42,18 +46,16 @@
 		OBJ_150 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Consts.swift */; };
 		OBJ_151 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Device.swift */; };
 		OBJ_152 /* Discovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Discovery.swift */; };
-		OBJ_153 /* FinderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* FinderFactory.swift */; };
+		OBJ_153 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Factory.swift */; };
 		OBJ_154 /* DiscoveryOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* DiscoveryOption.swift */; };
 		OBJ_155 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Version.swift */; };
-		OBJ_156 /* AndroidFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AndroidFinder.swift */; };
 		OBJ_157 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Error.swift */; };
 		OBJ_158 /* IOSDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* IOSDevice.swift */; };
-		OBJ_159 /* IOSDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* IOSDeviceManager.swift */; };
 		OBJ_160 /* IOSFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* IOSFinder.swift */; };
 		OBJ_161 /* AllFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* AllFinder.swift */; };
 		OBJ_162 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Platform.swift */; };
 		OBJ_163 /* FinderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* FinderProtocol.swift */; };
-		OBJ_164 /* InstallProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* InstallProtocol.swift */; };
+		OBJ_164 /* InstallerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* InstallerProtocol.swift */; };
 		OBJ_95 /* MayonFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* MayonFrameworkTests.swift */; };
 		OBJ_97 /* MayonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Mayon::MayonFramework::Product" /* MayonFramework.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +85,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB6F88941FF014B5009C4915 /* Installer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installer.swift; sourceTree = "<group>"; };
+		AB6F889A1FF015DD009C4915 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		AB6F889D1FF069B3009C4915 /* IOSInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSInstaller.swift; sourceTree = "<group>"; };
+		AB6F889F1FF06DBF009C4915 /* UninstallerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerProtocol.swift; sourceTree = "<group>"; };
 		ABC4BF861FDB8BFD0098A704 /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
 		ABC4BF871FDB8BFD0098A704 /* MobileDevice-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MobileDevice-Bridging-Header.h"; sourceTree = "<group>"; };
 		"Mayon::Mayon::Product" /* Mayon */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mayon; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,18 +98,16 @@
 		OBJ_11 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Discovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovery.swift; sourceTree = "<group>"; };
-		OBJ_14 /* FinderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderFactory.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		OBJ_16 /* DiscoveryOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryOption.swift; sourceTree = "<group>"; };
 		OBJ_18 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
-		OBJ_21 /* AndroidFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidFinder.swift; sourceTree = "<group>"; };
 		OBJ_23 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		OBJ_24 /* IOSDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSDevice.swift; sourceTree = "<group>"; };
-		OBJ_25 /* IOSDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSDeviceManager.swift; sourceTree = "<group>"; };
 		OBJ_26 /* IOSFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSFinder.swift; sourceTree = "<group>"; };
 		OBJ_28 /* AllFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFinder.swift; sourceTree = "<group>"; };
 		OBJ_29 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		OBJ_31 /* FinderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderProtocol.swift; sourceTree = "<group>"; };
-		OBJ_32 /* InstallProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallProtocol.swift; sourceTree = "<group>"; };
+		OBJ_32 /* InstallerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallerProtocol.swift; sourceTree = "<group>"; };
 		OBJ_35 /* Commander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commander.swift; sourceTree = "<group>"; };
 		OBJ_37 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 		OBJ_38 /* Install.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Install.swift; sourceTree = "<group>"; };
@@ -175,6 +179,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB6F889C1FF01648009C4915 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* Discovery.swift */,
+				AB6F88941FF014B5009C4915 /* Installer.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		AB6F88A11FF06E91009C4915 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* Protocol */,
+				OBJ_10 /* CommandBus.swift */,
+				OBJ_11 /* Consts.swift */,
+				OBJ_12 /* Device.swift */,
+				OBJ_14 /* Factory.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		ABC4BF851FDB8BFD0098A704 /* MobileDevice */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,20 +228,11 @@
 		OBJ_19 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* Android */,
 				OBJ_22 /* Apple */,
 				OBJ_27 /* Common */,
 				OBJ_29 /* Platform.swift */,
 			);
 			path = Platform;
-			sourceTree = "<group>";
-		};
-		OBJ_20 /* Android */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_21 /* AndroidFinder.swift */,
-			);
-			path = Android;
 			sourceTree = "<group>";
 		};
 		OBJ_22 /* Apple */ = {
@@ -225,8 +241,8 @@
 				ABC4BF851FDB8BFD0098A704 /* MobileDevice */,
 				OBJ_23 /* Error.swift */,
 				OBJ_24 /* IOSDevice.swift */,
-				OBJ_25 /* IOSDeviceManager.swift */,
 				OBJ_26 /* IOSFinder.swift */,
+				AB6F889D1FF069B3009C4915 /* IOSInstaller.swift */,
 			);
 			path = Apple;
 			sourceTree = "<group>";
@@ -242,8 +258,10 @@
 		OBJ_30 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				AB6F889A1FF015DD009C4915 /* Action.swift */,
 				OBJ_31 /* FinderProtocol.swift */,
-				OBJ_32 /* InstallProtocol.swift */,
+				OBJ_32 /* InstallerProtocol.swift */,
+				AB6F889F1FF06DBF009C4915 /* UninstallerProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -262,18 +280,18 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_35 /* Commander.swift */,
-				OBJ_36 /* Discovery */,
+				OBJ_36 /* Actions */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
 		};
-		OBJ_36 /* Discovery */ = {
+		OBJ_36 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_37 /* Discover.swift */,
 				OBJ_38 /* Install.swift */,
 			);
-			path = Discovery;
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		OBJ_40 /* Tests */ = {
@@ -343,7 +361,7 @@
 			path = ".build/checkouts/SwiftCLI-8466703425035036135/Sources/SwiftCLI";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -353,7 +371,6 @@
 				OBJ_44 /* Dependencies */,
 				OBJ_73 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -382,7 +399,6 @@
 				OBJ_9 /* Common */,
 				OBJ_17 /* Helper */,
 				OBJ_19 /* Platform */,
-				OBJ_30 /* Protocol */,
 			);
 			name = MayonFramework;
 			path = Sources/MayonFramework;
@@ -391,11 +407,8 @@
 		OBJ_9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* CommandBus.swift */,
-				OBJ_11 /* Consts.swift */,
-				OBJ_12 /* Device.swift */,
-				OBJ_13 /* Discovery.swift */,
-				OBJ_14 /* FinderFactory.swift */,
+				AB6F88A11FF06E91009C4915 /* Core */,
+				AB6F889C1FF01648009C4915 /* Actions */,
 				OBJ_15 /* Options */,
 			);
 			path = Common;
@@ -490,7 +503,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -606,22 +619,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				AB6F889E1FF069B3009C4915 /* IOSInstaller.swift in Sources */,
 				OBJ_149 /* CommandBus.swift in Sources */,
+				AB6F889B1FF015DD009C4915 /* Action.swift in Sources */,
 				OBJ_150 /* Consts.swift in Sources */,
 				OBJ_151 /* Device.swift in Sources */,
 				OBJ_152 /* Discovery.swift in Sources */,
-				OBJ_153 /* FinderFactory.swift in Sources */,
+				OBJ_153 /* Factory.swift in Sources */,
 				OBJ_154 /* DiscoveryOption.swift in Sources */,
 				OBJ_155 /* Version.swift in Sources */,
-				OBJ_156 /* AndroidFinder.swift in Sources */,
 				OBJ_157 /* Error.swift in Sources */,
+				AB6F88981FF01513009C4915 /* Installer.swift in Sources */,
 				OBJ_158 /* IOSDevice.swift in Sources */,
-				OBJ_159 /* IOSDeviceManager.swift in Sources */,
 				OBJ_160 /* IOSFinder.swift in Sources */,
 				OBJ_161 /* AllFinder.swift in Sources */,
 				OBJ_162 /* Platform.swift in Sources */,
 				OBJ_163 /* FinderProtocol.swift in Sources */,
-				OBJ_164 /* InstallProtocol.swift in Sources */,
+				OBJ_164 /* InstallerProtocol.swift in Sources */,
+				AB6F88A01FF06DBF009C4915 /* UninstallerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

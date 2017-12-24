@@ -9,7 +9,7 @@
 import Foundation
 
 /// Model representing options that are provided duing Discovery Command
-public struct DiscoveryOption {
+struct DiscoveryOption {
 
     /// The platform type we are targetting
     let platform: Platform
@@ -21,14 +21,5 @@ public struct DiscoveryOption {
                 timeout: Double?) {
         self.platform = platform
         self.timeout = timeout ?? DefaultSetting.KDISCOVERYTIMEOUT
-    }
-}
-
-// MARK: - Helper methods
-extension DiscoveryOption {
-
-    /// The class name that runs finder for defined platform
-    var finderName: String {
-        return platform.rawValue + "Finder"
     }
 }

@@ -8,9 +8,18 @@
 
 import Foundation
 
+/// enum that encapsulates the response from Platform finders
+///
+/// - success: Holds the list of devices that was found during discovery
+/// - failure: Error that was experienced during discovery
+public enum FinderResponse {
+    case success([Device])
+    case failure(Error)
+}
+
 // MARK: - Types
 public typealias DeviceRack = [String:Device]
-public typealias DiscoveryCallback = ([Device]) -> Void
+public typealias DiscoveryCallback = (FinderResponse) -> Void
 
 /// All the platform Finder types should conform to this protocol
 public protocol FinderProtocol: class {

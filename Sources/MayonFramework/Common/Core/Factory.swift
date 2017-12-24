@@ -13,8 +13,15 @@ public struct FinderFactory {
         switch platform {
         case .iOS:
             return IOSFinder()
-        default:
-            return AllFinder()
+        }
+    }
+}
+
+public struct InstallerFactory {
+    public static func installerFor(platform: Platform) -> InstallerProtocol {
+        switch platform {
+        case .iOS:
+            return IOSInstaller()
         }
     }
 }

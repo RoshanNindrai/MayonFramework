@@ -23,7 +23,7 @@ extension IOSFinder: FinderProtocol {
             IOSFinder.add(IOSDevice(amdevice: amdevice))
         }, 0, 0, 0, notificationPointer)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime(uptimeNanoseconds: 0) + timeout) {
-            callback(IOSFinder.deviceList())
+            callback(.success(IOSFinder.deviceList()))
         }
     }
 }

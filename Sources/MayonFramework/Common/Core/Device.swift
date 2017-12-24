@@ -35,6 +35,6 @@ public protocol Device: CustomStringConvertible {
 extension Device {
     /// Device information within console
     public var description: String {
-        return "\(platform): '\(name)' \(deviceId)"
+        return "\(platform): '\(name)' \(deviceId) \(version)"
     }
 }
