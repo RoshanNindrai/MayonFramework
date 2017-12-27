@@ -37,11 +37,23 @@ Actions are set of operations or functions that MayonFramework exposes to intera
 * [Discovery] - Action used to identify or list all the devices that are currently connected to the machine. As of today, Discovery supports only devices that is running iOS.
 
 #### Discovery
-The Discovery within MayonFramework enables the consumer to get the list of devices that is currently connect to the machine. The Discovery currently supports iOS, android support will be added soon. As part of the completion block a list of Device is returned. The devices shouldn’t outlive the closure life time as it might result in un expected behavior.
+The Discovery within MayonFramework enables the consumer to get the list of devices that is currently connect to the machine. The Discovery currently supports iOS, android support will be added soon. As part of the completion block a FinderResponse is returned. The devices shouldn’t outlive the closure life time as it might result in un expected behavior.
 
+    //FinderResponse
+    /// enum that encapsulates the response from Platform finders
+    ///
+    /// - success: Holds the list of devices that was found during discovery
+    /// - failure: Error that was experienced during discovery
+    public enum FinderResponse {
+        case success([Device])
+        case failure(Error)
+    }
+    
     import MayonFramework
+    
     // timeo is the timeout value in seconds defaults to 5 seconds
     let discovery = Discovery(.iOS, timeo) { print($0) } // success([iOS: 'Roshan’s iPhone X' 4f8053c5d21ee917*********** 11.2.1])
+    
     discovery.run()
 
 Note: The discovery is one of the actions that is supported by MayonFramework and all actions are executed only when the run function is called.
