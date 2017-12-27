@@ -37,7 +37,7 @@ Actions are set of operations or functions that MayonFramework exposes to intera
 * [Discovery] - Action used to identify or list all the devices that are currently connected to the machine. As of today, Discovery supports only devices that is running iOS.
 
 #### Discovery
-The Discovery within MayonFramework enables the consumer to get the list of devices that is currently connect to the machine. The Discovery currently supports iOS, android support will be added soon. As part of the completion block a list of Device is returned. The devices shouldnt outlive the closure life time as it might result in un expected behaviour.
+The Discovery within MayonFramework enables the consumer to get the list of devices that is currently connect to the machine. The Discovery currently supports iOS, android support will be added soon. As part of the completion block a list of Device is returned. The devices shouldn’t outlive the closure life time as it might result in un expected behavior.
 
     import MayonFramework
     
