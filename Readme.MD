@@ -40,7 +40,7 @@ Actions are set of operations or functions that MayonFramework exposes to intera
 The Discovery within MayonFramework enables the consumer to get the list of devices that is currently connect to the machine. The Discovery currently supports iOS, android support will be added soon. As part of the completion block a list of Device is returned. The devices shouldn’t outlive the closure life time as it might result in un expected behavior.
 
     import MayonFramework
-    
+    // timeo is the timeout value in seconds defaults to 5 seconds
     let discovery = Discovery(.iOS, timeo) { print($0) } // success([iOS: 'Roshan’s iPhone X' 4f8053c5d21ee917*********** 11.2.1])
     discovery.run()
 
