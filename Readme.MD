@@ -39,7 +39,7 @@ Actions are set of operations or functions that MayonFramework exposes to intera
 #### Discovery
 The Discovery within MayonFramework enables the consumer to get the list of devices that is currently connect to the machine. The Discovery currently supports iOS, android support will be added soon. As part of the completion block a FinderResponse is returned. The devices shouldn’t outlive the closure life time as it might result in un expected behavior.
 
-    //FinderResponse
+    /// FinderResponse
     /// enum that encapsulates the response from Platform finders
     ///
     /// - success: Holds the list of devices that was found during discovery
@@ -75,4 +75,4 @@ The following are the team members and their contact Information.
  - Write Tests
  - Rethink Github Save
  
-[Discovery]: (##Discovery)
+[Discovery]: (#discovery)
