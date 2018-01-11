@@ -1,5 +1,5 @@
 # MayonFramework
-[![Build Status](https://travis-ci.org/RoshanNindrai/Mayon.svg?branch=master)](https://travis-ci.org/RoshanNindrai/Mayon)
+[![Build Status](https://travis-ci.org/RoshanNindrai/MayonFramework.svg?branch=master)](https://travis-ci.org/RoshanNindrai/MayonFramework)
 
 MayonFramework is a dynamic framework that can be used to talk with iOS devices. The framework uses the private MobileDevice.framework to communicate with devices. Due to the use of private framework within this framework, this is not suitable for publishing over Appstore. The framework is build to run on macOS 10.10 and above. As part of this project we are also building a mac cli tool called Mayon that is used as a playground to test MayonFramework functionality.
 
