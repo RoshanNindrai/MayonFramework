@@ -464,3 +464,9 @@ let errMessageToLocMessage: [String:  String] = [
     "kMobileHouseArrestPathMissing": "The requested application's data container path does not exist.",
     "kMobileHouseArrestUnknownCommand": "The request contained an invalid command."
 ]
+
+func validate(_ errorCode: Int32) {
+    if let key = errorCodeMap[Int(errorCode)] {
+        print(errMessageToLocMessage[key] ?? "No error message for this valid error")
+    }
+}

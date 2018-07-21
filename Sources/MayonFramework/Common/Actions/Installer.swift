@@ -16,6 +16,19 @@ public enum InstallerError {
     case failed(String)
 }
 
+// MARK: - Helpers
+public extension InstallerError {
+    /// Error message as raw string
+    var message: String {
+        switch self {
+        case let .invalidArtifact(msg):
+            return msg
+        case let .failed(msg):
+            return msg
+        }
+    }
+}
+
 /// Callback that is called when the installation action is called on a specific Platform
 ///
 /// - failure: encapsulates the error object
@@ -28,9 +41,12 @@ public enum InstallationStatus {
 public typealias InstallationCallback = (InstallationStatus) -> Void
 
 /// The Installer Struct helps in installing a given application to a specific platform
-public struct Installer {
+public final class Installer {
     let artifact: Artifact
     let callback: InstallationCallback
+
+    /// The installer that is spawed to install application on a specific device
+    fileprivate var installer: InstallerProtocol?
 
     public init(_ artifact: Artifact, _ callback: @escaping InstallationCallback) {
         self.artifact = artifact
@@ -41,7 +57,17 @@ public struct Installer {
 
 extension Installer: Action {
     public func run() {
-        let installer = InstallerFactory.installerFor(platform: artifact.platform)
-        installer.install(artifact, callback)
+        installer = InstallerFactory.installerFor(platform: artifact.platform)
+
+        guard artifact.appPathCFURL.isValidPath else {
+            let _error = """
+            Application \(artifact.appPathCFURL) path is invalid,
+            please provide a valid path to application file
+            """
+            callback(.failure(.invalidArtifact(_error)))
+            return
+        }
+
+        installer?.install(artifact, callback)
     }
 }

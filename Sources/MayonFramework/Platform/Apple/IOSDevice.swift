@@ -8,7 +8,8 @@
 
 import Foundation
 
-typealias AMDeviceRef = UnsafeMutablePointer<am_device_notification_callback_info>
+public typealias AMDeviceRef = UnsafeMutablePointer<am_device_notification_callback_info>
+public typealias AMDevicePointer = UnsafeMutablePointer<am_device>
 
 // MARK: - IOS Device
 struct IOSDevice: Device {
@@ -26,7 +27,9 @@ struct IOSDevice: Device {
     var version: String
 
     /// The proxy to internal representation of device
-    var proxy: Proxy?
+    var proxy: Proxy
+
+    fileprivate var amDeviceRef: AMDeviceRef?
 
     /// Create a Device for iOS plaform
     ///
@@ -34,7 +37,7 @@ struct IOSDevice: Device {
     init?(amdevice: AMDeviceRef?) {
 
         connect(amdevice); defer { disConnect(amdevice) }
-
+        amDeviceRef = amdevice
         deviceId = (AMDeviceCopyDeviceIdentifier(amdevice!.pointee.dev).takeRetainedValue() as String)
         // This will return nil if the device was unplugged during discovery
         guard (AMDeviceCopyValue(amdevice!.pointee.dev, nil, "DeviceName" as CFString) as? String) != nil else {
@@ -45,7 +48,27 @@ struct IOSDevice: Device {
         name = (AMDeviceCopyValue(amdevice!.pointee.dev, nil, "DeviceName" as CFString) as? String)!
         version =  (AMDeviceCopyValue(amdevice!.pointee.dev, nil, "ProductVersion" as CFString) as? String)!
         platform = .iOS
-        proxy = .iOS((amdevice?.pointee.dev.pointee)!)
+        proxy = .iOS((amdevice?.pointee.dev)!)
+    }
+
+}
+
+extension IOSDevice {
+
+    /// Pointer to the device
+    var amdevice: AMDevicePointer? {
+        if case let .iOS(amdevice) = proxy {
+            return amdevice
+        }
+        return nil
+    }
+
+    /// To execute any command, before exevuting the command
+    /// the device connect call is made and will be disconnected at the end of execution
+    ///
+    /// - Parameter command: The command to be executed in the device
+    func execute(_ command: (AMDevicePointer?) -> Void) {
+        command(amDeviceRef?.pointee.dev)
     }
 
 }
@@ -66,5 +89,5 @@ private func connect(_ device: AMDeviceRef?) {
 ///
 /// - Parameter device: The actual AMDevice reference
 private func disConnect(_ device: AMDeviceRef?) {
-    AMDeviceRelease(device!.pointee.dev)
+    AMDeviceDisconnect(device!.pointee.dev)
 }

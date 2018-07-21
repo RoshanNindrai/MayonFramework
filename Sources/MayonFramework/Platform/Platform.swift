@@ -30,4 +30,10 @@ extension Artifact {
             return .iOS
         }
     }
+    var appPathCFURL: CFURL {
+        switch self {
+        case let .iOS(_, path):
+            return path as CFURL
+        }
+    }
 }

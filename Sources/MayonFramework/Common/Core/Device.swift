@@ -9,7 +9,7 @@
 import Foundation
 
 public enum Proxy {
-    case iOS(am_device)
+    case iOS(AMDevicePointer)
 }
 
 /// Represents an actual mobile device
@@ -28,7 +28,7 @@ public protocol Device: CustomStringConvertible {
     var version: String { get }
 
     /// The proxy to internal representation of device
-    var proxy: Proxy? { get }
+    var proxy: Proxy { get }
 
 }
 

@@ -15,6 +15,9 @@ import MayonFramework
 /// Command that helps to list all devices that are connected to the machine
 final class Install {
 
+    /// Installer used to run installer for a specific platform
+    fileprivate var installer: Installer?
+
     /// The name of the command; used to route arguments to commands
     var name: String {
         return "install"
@@ -44,10 +47,16 @@ extension Install: Command {
     /// - Throws: CLIError if command cannot execute successfully
     func execute() throws {
         let devices = deviceID.value != nil ? [deviceID.value!]: nil
-        let installer = Installer(.iOS(devices, URL(fileURLWithPath: self.applicationPath.value))) { _ in
-            print("Installation Done")
-            exit(0)
+        installer = Installer(.iOS(devices, URL(fileURLWithPath: self.applicationPath.value))) { status in
+            switch status {
+            case let .failure(failure):
+                print(failure.message)
+                exit(1)
+            default:
+                print("Installation Completed")
+                exit(0)
+            }
         }
-        installer.run()
+        installer?.run()
     }
 }

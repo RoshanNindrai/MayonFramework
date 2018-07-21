@@ -21,7 +21,6 @@ build ()
     # Adding linker flag to private frameworks
     # Specifying the required framework
     # Adding Objc bridging header
-
     swift build --target Mayon -Xlinker -v \
     -Xlinker -framework -Xlinker MobileDevice \
     -Xswiftc -import-objc-header -Xswiftc Sources/MayonFramework/Platform/Apple/mobiledevice/MobileDevice-Bridging-Header.h

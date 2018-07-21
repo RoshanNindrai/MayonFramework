@@ -11,6 +11,8 @@
 		AB6F889B1FF015DD009C4915 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F889A1FF015DD009C4915 /* Action.swift */; };
 		AB6F889E1FF069B3009C4915 /* IOSInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F889D1FF069B3009C4915 /* IOSInstaller.swift */; };
 		AB6F88A01FF06DBF009C4915 /* UninstallerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F889F1FF06DBF009C4915 /* UninstallerProtocol.swift */; };
+		ABA3F112205F4C6A0027AA60 /* CFURL+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3F111205F4C6A0027AA60 /* CFURL+Validator.swift */; };
+		ABA3F113205F4C6A0027AA60 /* CFURL+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3F111205F4C6A0027AA60 /* CFURL+Validator.swift */; };
 		OBJ_105 /* Commander.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Commander.swift */; };
 		OBJ_106 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Discover.swift */; };
 		OBJ_107 /* Install.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Install.swift */; };
@@ -89,6 +91,7 @@
 		AB6F889A1FF015DD009C4915 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		AB6F889D1FF069B3009C4915 /* IOSInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSInstaller.swift; sourceTree = "<group>"; };
 		AB6F889F1FF06DBF009C4915 /* UninstallerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerProtocol.swift; sourceTree = "<group>"; };
+		ABA3F111205F4C6A0027AA60 /* CFURL+Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CFURL+Validator.swift"; sourceTree = "<group>"; };
 		ABC4BF861FDB8BFD0098A704 /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
 		ABC4BF871FDB8BFD0098A704 /* MobileDevice-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MobileDevice-Bridging-Header.h"; sourceTree = "<group>"; };
 		"Mayon::Mayon::Product" /* Mayon */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mayon; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_28 /* AllFinder.swift */,
+				ABA3F111205F4C6A0027AA60 /* CFURL+Validator.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -629,6 +633,7 @@
 				OBJ_154 /* DiscoveryOption.swift in Sources */,
 				OBJ_155 /* Version.swift in Sources */,
 				OBJ_157 /* Error.swift in Sources */,
+				ABA3F112205F4C6A0027AA60 /* CFURL+Validator.swift in Sources */,
 				AB6F88981FF01513009C4915 /* Installer.swift in Sources */,
 				OBJ_158 /* IOSDevice.swift in Sources */,
 				OBJ_160 /* IOSFinder.swift in Sources */,
@@ -645,6 +650,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_95 /* MayonFrameworkTests.swift in Sources */,
+				ABA3F113205F4C6A0027AA60 /* CFURL+Validator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

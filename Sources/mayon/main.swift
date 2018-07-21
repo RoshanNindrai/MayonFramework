@@ -12,8 +12,8 @@ import SwiftCLI
 
 let commander = Commander()
 _ = commander.debugGo(with: """
-                            mayon install -d 4f8053c5d21ee917e59cbe385d6817ba875dd8cb123
-                            /Users/roshannindrai/Documents/sentinel/resources/ios/build/SNMATestDemo-MT.ipa
+                            mayon install /Users/roshannindrai/Documents/sentinel/resources/ios/build/Meanwhile.ipa
+                            -d 3cfcbebf173c5074e1ff2db8f3851037593088b1
                             """)
 
 CFRunLoopRun()
